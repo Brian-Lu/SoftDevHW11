@@ -1,9 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Dummy's</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
@@ -20,24 +17,22 @@
         <div class="callout">
           <h3>Here&rsquo;s How You Use Foundation! </h3>
           <p>We went to a website (<a href="http://foundation.zurb.com/"> Click here to see it!</a>)</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
+          <p>We have (sort of) mastered foundation and we will show you how to use the following</p>
           <div class="row">
             <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
+              <p>Rows and Columns (these are an integral part of the foundation experience)</p>
             </div>
             <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
+              <p>Forms (these are simply important for most websites)</p>
             </div>
             <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
+                <p>Setting up the website</p>
             </div>
           </div>
           <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
+            <div class="large-12 medium-12 columns">
+              <p>The most important thing about using foundation is the download their css file then link it to your html file as an external style sheet <br>The line of code would look something like this:<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="foundation.css"&gt;<br>
+                Note: It is recommended that you also use their javascript files to make you website even more valid.</p>
             </div>
           </div>
         </div>
@@ -45,48 +40,39 @@
     </div>
 
     <div class="row">
-      <div class="large-8 medium-8 columns">
+      <div class="large-12 medium-12 columns">
         <h5>Here&rsquo;s your basic grid:</h5>
         <!-- Grid Example -->
 
         <div class="row">
           <div class="large-12 columns">
             <div class="primary callout">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
+              <p>This is a div within a div. The outer div (with width 12 unis) is created when one sets the class to "row" the inner divs are created by setting the classes to either large-12, medium-12 or small-12 (each differing in how they collapse when the page is squeezed) it is also essential to have one of these classes in combination with the class "columns"
+                  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This div is <b>&lt;dic class="large-12 columns"&gt;</b> </p>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="large-6 medium-6 columns">
+          <div class="large-6 columns">
             <div class="primary callout">
-              <p>Six columns</p>
+              <p>Six large columns (by changing the number after "large-", "small-" or "medium-" in the class, the user can set the width to his own unit of preference</p>
             </div>
           </div>
-          <div class="large-6 medium-6 columns">
+          <div class="large-6 columns">
             <div class="primary callout">
-              <p>Six columns</p>
+              <p>Six large columns (Make page thinner to see the difference)</p>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="large-3 medium-3 small-3 columns">
+          <div class="small-6 columns">
             <div class="primary callout">
-              <p>Three columns</p>
+              <p>Six small columns</p>
             </div>
           </div>
-          <div class="large-3 medium-3 small-3 columns">
+          <div class="small-6 columns">
             <div class="primary callout">
-              <p>Three columns</p>
-            </div>
-          </div>
-	  <div class="large-3 medium-3 small-3 columns">
-	    <div class = "primary callout">
-	      <p>Three columns</p>
-	    </div>
-	  </div>
-          <div class="large-3 medium-3 small-3 columns">
-            <div class="primary callout">
-              <p>Three columns</p>
+              <p>Six small columns</p>
             </div>
           </div>
         </div>
@@ -94,28 +80,30 @@
         <hr />
 
         <h5>We bet you&rsquo;ll need a form somewhere:</h5>
+          <p><b>
+            To make a form, all the user needs to do is to create form elements as he normally does in html, the fancy foundation css, will make it look fancy automatically. THIS FORM IS LARGELY FROM THE FOUNDATION BUILT-IN TEMPLATE
+              </b></p>
         <form>
           <div class="row">
-            <div class="large-12 columns">
+            <div class="large-12 medium-12 columns">
               <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
+              <input type="text" placeholder="12 large columns" />
             </div>
           </div>
           <div class="row">
             <div class="large-4 medium-4 columns">
               <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
+              <input type="text" placeholder="4 large columns" />
             </div>
             <div class="large-4 medium-4 columns">
               <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
+              <input type="text" placeholder="4 large columns" />
             </div>
             <div class="large-4 medium-4 columns">
               <div class="row collapse">
                 <label>Input Label</label>
                 <div class="input-group">
-                  <input type="text" placeholder="small-9.columns" class="input-group-field" />
-                  <span class="input-group-label">.com</span>
+                  <input type="text" placeholder="9 medium columns" />
                 </div>
               </div>
             </div>
@@ -133,12 +121,12 @@
           </div>
           <div class="row">
             <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+              <label>CHOOSE</label>
+              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">OPTION 1</label>
+              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">OPTION 2</label>
             </div>
             <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
+              <label>LOOK!</label>
               <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
               <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
             </div>
@@ -151,19 +139,15 @@
           </div>
         </form>
       </div>
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="button">Simple Button</a><br/>
-        <a href="#" class="success button">Success Btn</a><br/>
-        <a href="#" class="alert button">Alert Btn</a><br/>
-        <a href="#" class="secondary button">Secondary Btn</a></p>
-        <div class="callout">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
-        </div>
-      </div>
+        <div class = "row">
+      <div class="large-12 medium-12 columns">
+        <h5>Buttons are made with specific classes, the name of each button is the name of its class</h5>
+        <p><a href="#" class="button">button</a><br/>
+        <a href="#" class="success button">success button</a><br/>
+        <a href="#" class="alert button">alert button</a><br/>
+        <a href="#" class="secondary button">secondary button</a></p>
+        </div>    
+    </div>
     </div>
 
     <script src="js/vendor/jquery.js"></script>
